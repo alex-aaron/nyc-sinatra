@@ -1,0 +1,21 @@
+
+<h1>Figure</h1>
+<h2><%= @figure.name %></h2>
+<ul>
+    <% if @figure.titles != nil %>
+        <li>Titles:</li>
+            <ul>
+                <% @figure.titles.each do |title| %>
+                    <li><%= title.name %></li>
+                <% end %>
+            </ul>
+        <% end %>
+     <% if @figure.landmarks != nil %>
+        <li>Landmarks:</li>
+            <ul>
+                <% @figure.landmarks.each do |landmark| %>
+                    <li><%= landmark.name %></li>
+                <% end %>
+            </ul>
+        <% end %>
+ </ul>
