@@ -1,0 +1,9 @@
+<% @figures.each do |figure| %>
+    <input type="checkbox" name="figure[title_ids][]" id="<%= figure.id %>" value="<%= figure.id %>">
+    <%= figure.titles[] %></input><br>
+<% end %>
+
+<% @figures.each do |figure| %>
+    # <input type="checkbox" name="figure[landmarks][]" id="<%= figure.id %>" value="<%= figure.id %>">
+   #  <%= figure.landmarks[] %></input><br>
+ <% end %>
